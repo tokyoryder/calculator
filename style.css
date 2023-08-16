@@ -1,0 +1,106 @@
+/* Variables */
+:root{
+    --dark-grey: rgb(43,39,39);
+    --light-grey: rgb(86, 84, 84);
+    --orange: orange; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+
+}
+.calculator{
+    background-color: var(--dark-grey);
+    width: 88%;
+    max-width: 450px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 1px 3px 13px -1px rgba(0,0,0,0.56);
+    overflow: hidden;
+    
+}
+.calculator p{
+    text-align: left;
+    color: var(--orange);
+    font-weight: 600;
+}
+.output{
+    background-color:white;
+    height: 130px;
+    width: 100%;
+    text-align: right;
+    padding: 18px;
+    font-size: 2rem;
+    position: relative;
+    cursor: not-allowed;
+}
+.display-1{
+    height: 30px;
+    font-size: 1,3rem;
+    opacity: 0,3;
+    overflow: hidden;
+}
+.display-2{
+    color:var(--orange)
+}
+.display-3{
+    font-size: 1.3rem;
+    opacity: 0.3;
+    position:absolute;
+    bottom: 0;
+    left: 10;
+}
+.input{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.button{
+    background-color: var(--dark-grey);
+    height: 120px;
+    width: 100%;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(57, 54, 45);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: var(--orange);
+    transition: all 0,2s ease-in-out;
+}
+.zero{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.equal:hover{
+    background-color: #de940b;
+}
+.c, .ce{
+    background:rgb(0, 84, 136)
+}
+.c:hover, .ce:hover{
+    background-color: #369dd8;
+}
+.symbol{
+    background-color: var(--light-grey);
+}
+.symbol:hover{
+    background-color:rgb(51,51,51) ;
+}
+.equal{
+    background-color: var(--orange);
+}
